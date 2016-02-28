@@ -297,7 +297,16 @@
 					"js/mui.min.js",
 					"css/mui.min.css",
 					"fonts/mui.ttf",
-					"images/personal/touxiang.jpg"
+					"images/personal/touxiang.jpg",
+					"images/personal/touxiang.png",
+					"images/personal/beijing.png",
+					"images/personal/shezhi.png",
+					"images/personal/vip.png",
+					"images/personal/anquan.png",
+					"images/personal/shoucang.png",
+					"images/personal/lishi.png",
+					"images/personal/xiazai.png",
+					"images/personal/goumaishipin.png"
 				],
 				"refer": [],
 				"priority": 0
