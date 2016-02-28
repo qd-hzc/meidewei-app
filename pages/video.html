@@ -147,10 +147,15 @@
 				margin-left: 10px;
 			}
 			
-			.anniu img {
-				width: 16%;
-				margin-left: 3%;
+			.anniu>div {
+				width: 20%;
+				/*margin-left: 3%;*/
 				margin-top: 13px;
+				float: left;
+				text-align: center;
+			}
+			.anniu>div>img{
+				width: 85%;
 			}
 			
 			.mui-wenzi div {
@@ -165,7 +170,8 @@
 			.mui-table-view .mui-media-body {
 				overflow: hidden;
 			}
-			.mui-table-view{
+			
+			.mui-table-view {
 				padding-left: 0px;
 			}
 			
@@ -199,15 +205,17 @@
 				color: inherit;
 			}
 			
-			.mui-navigate-right:after{
+			.mui-navigate-right:after {
 				right: 15px;
 				content: '\e583';
 			}
-			.mui-navigate-right{
+			
+			.mui-navigate-right {
 				font-size: 22px;
 				color: #343434;
 			}
-			.mui-navigate-right:after{
+			
+			.mui-navigate-right:after {
 				font-family: Muiicons;
 				font-size: inherit;
 				line-height: 1;
@@ -220,10 +228,11 @@
 				color: #bbb;
 				-webkit-font-smoothing: antialiased;
 			}
-			.xuanji{
+			
+			.xuanji {
 				width: 20%;
 				height: 36px;
-				border:1px solid #D8D8D8 ;
+				border: 1px solid #D8D8D8;
 				float: left;
 				margin: -1px;
 				font-size: 20px;
@@ -267,11 +276,21 @@
 				</div>
 			</div>
 			<div class="anniu" style="margin-top: 16px;background-color: white;height: 106px;">
-				<img src="../images/shipin/dianzan.png" />
-				<img src="../images/shipin/pinglun.png" />
-				<img src="../images/shipin/xiazai.png" />
-				<img src="../images/shipin/shoucang.png" />
-				<img src="../images/shipin/fenxiang.png" />
+				<div>
+					<img src="../images/shipin/dianzan.png" />
+				</div>
+				<div>
+					<img src="../images/shipin/pinglun.png" />
+				</div>
+				<div>
+					<img src="../images/shipin/xiazai.png" />
+				</div>
+				<div>
+					<img src="../images/shipin/shoucang.png" />
+				</div>
+				<div>
+					<img src="../images/shipin/fenxiang.png" />
+				</div>
 			</div>
 			<div class="mui-wenzi" style="width: 100%;position: relative;top: -23px;">
 				<div>点赞</div>
@@ -318,7 +337,7 @@
 			//				myPlayer.show();
 			//			}, true);
 			var oldback = mui.back;
-			mui.back = function(){
+			mui.back = function() {
 				v.pause();
 				oldback();
 			}
