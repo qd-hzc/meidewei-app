@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="css/mui.min.css">
+		<style>
+			html,body {
+				background-color: #efeff4;
+			}
+			.head-img {
+				height: 72px !important;
+				max-width: 72px !important;
+			}
+			
+			.li-img {
+				height: 20px !important;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">设置</h1>
+		</header>-->
+		<div class="mui-content" style="padding-top: 35px;">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell mui-media">
+					<a href="#account">
+						<img class="mui-media-object mui-pull-left head-img" id="head-img" src="images/personal/touxiang.jpg">
+						<div class="mui-media-body" style="margin-top: 18px;padding-left: 10px;">
+							野狼
+							<p class='mui-ellipsis'>美 号:meidewei</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+			<ul class="mui-table-view" style="margin-top: 25px;">
+				<li class="mui-table-view-cell mui-media" data-url="settings/bdsbk.html">
+					<a>
+						<img class="mui-media-object mui-pull-left li-img" id="head-img" src="images/personal/touxiang.jpg">
+						<div class="mui-media-body">
+							VIP中心
+						</div>
+					</a>
+				</li>
+
+				<li class="mui-table-view-cell" data-url="settings/wddjj.html">
+					<a>
+						<img class="mui-media-object mui-pull-left li-img" id="head-img" src="images/personal/touxiang.jpg">
+						<div class="mui-media-body">
+							我购买的视频
+						</div>
+					</a>
+				</li>
+			</ul>
+			<ul class="mui-table-view" style="margin-top: 25px;">
+				<li class="mui-table-view-cell" data-url="aijiaren/fuxm.html">
+					<a>
+						<img class="mui-media-object mui-pull-left li-img" id="head-img" src="images/personal/touxiang.jpg">
+						<div class="mui-media-body">
+							播放记录
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell" data-url="settings/choujiangmain.html">
+					<a>
+						<img class="mui-media-object mui-pull-left li-img" id="head-img" src="images/personal/touxiang.jpg">
+						<div class="mui-media-body">
+							我的收藏
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell" data-url="../updatepasswd.html">
+					<a>
+						<img class="mui-media-object mui-pull-left li-img" id="head-img" src="images/personal/touxiang.jpg">
+						<div class="mui-media-body">
+							本地离线
+						</div>
+					</a>
+				</li>
+			</ul>
+			<ul class="mui-table-view" style="margin-top: 25px;">
+				<li class="mui-table-view-cell" data-url="aijiaren/fuxm.html">
+					<a>
+						<img class="mui-media-object mui-pull-left li-img" id="head-img" src="images/personal/touxiang.jpg">
+						<div class="mui-media-body">
+							帐号安全
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell" data-url="settings/choujiangmain.html">
+					<a>
+						<img class="mui-media-object mui-pull-left li-img" id="head-img" src="images/personal/touxiang.jpg">
+						<div class="mui-media-body">
+							设置
+						</div>
+					</a>
+				</li>
+			</ul>
+			<ul class="mui-table-view" style="margin-top: 25px;">
+				<li class="mui-table-view-cell" data-url="../login.html">
+					<a style="text-align: center;color: #FF3B30;">
+						退出登录
+					</a>
+				</li>
+			</ul>
+		</div>
+	</body>
+	<script src="js/mui.min.js"></script>
+	<script>
+		mui.init({
+			swipeBack:true //启用右滑关闭功能
+		});
+//		document.getElementById("about").addEventListener('tap',function () {
+//			//获得主页面的webview
+//			var main = plus.webview.currentWebview().parent();
+//			//触发主页面的gohome事件
+//			mui.fire(main,'gohome');
+//		});
+	</script>
+</html>

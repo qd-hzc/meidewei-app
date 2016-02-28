@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="css/mui.min.css">
+		<style>
+			html,
+			body {
+				background-color: white;
+			}
+			
+			.mui-content {
+				background-color: white;
+			}
+			
+			.mui-icon-search {
+				left: 0px !important;
+			}
+			
+			.mui-search .mui-placeholder .mui-icon {
+				color: white;
+			}
+			
+			.mui-table-view:before,
+			.mui-table-view:after {
+				height: 0px;
+			}
+			
+			.icon-menu {
+				width: 26px;
+				position: relative;
+				top: 54px;
+				float: right;
+				margin-right: 13px;
+			}
+			
+			.triangle-right {
+				width: 0;
+				height: 0;
+				border-top: 5px solid transparent;
+				border-left: 10px solid gray;
+				border-bottom: 5px solid transparent;
+			}
+			
+			.news-info {
+				position: relative;
+				top: -15px;
+				left: 20px;
+				color: gray;
+			}
+			
+			.pindao {
+				width: 100px !important;
+				height: 60px;
+			}
+			
+			.pindao-div {
+				width: 120px !important;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content" style="padding-top: 50px;">
+			<div id="slider" class="mui-slider">
+				<div class="mui-slider-group mui-slider-loop">
+					<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a>
+							<img src="images/main/2.png">
+						</a>
+					</div>
+					<!-- 第一张 -->
+					<div class="mui-slider-item">
+						<a>
+							<img src="images/main/1.png">
+						</a>
+					</div>
+					<!-- 第二张 -->
+					<div class="mui-slider-item">
+						<a>
+							<img src="images/main/2.png">
+						</a>
+					</div>
+					<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a>
+							<img src="images/main/1.png">
+						</a>
+					</div>
+				</div>
+				<div class="mui-slider-indicator">
+					<div class="mui-indicator mui-active"></div>
+					<div class="mui-indicator"></div>
+				</div>
+			</div>
+			<div style="width:100%;position: absolute;top: 0px;z-index: 99999;">
+				<img src="images/main/touying.png" style="height: 30px;width: 100%;position: absolute;top: 50px;" />
+				<img class="icon-menu" src="images/main/shoucang.png" />
+				<img class="icon-menu" src="images/main/xiazai.png" />
+				<img class="icon-menu" src="images/main/lishi.png" />
+			</div>
+			<div style="height: 50px;width: 100%;background-color: #000000;margin-top: -4px;">
+				<img style="width: 45px;margin-top: 13px;margin-left: 10px;" src="images/main/sousuotiao/logo.png" />
+				<div class="mui-input-row mui-search" style="width: 70%;position: relative;top: -36px;left: 70px;">
+					<input type="search" style="background-color: #292929;" class="mui-input-clear" placeholder="朗朗钢琴演奏会">
+				</div>
+			</div>
+			<div style="position:relative;top: 15px;left: 10px;width:90%;font-size: 22px;border-left-color: red;border-left-style: solid;padding-left: 8px;">
+				<span style="display: inline;">精品推荐</span><span style="float: right;font-size: 14px;color: gray;">更多</span>
+			</div>
+			<div style="position: relative;top:30px;padding-left: 20px;">
+				<div class="triangle-right"></div><span class="news-info">因梵蒂诺任FIFA新主席</span>
+				<div class="triangle-right"></div><span class="news-info">快递“进京”严格实名制</span>
+			</div>
+			<ul class="mui-table-view mui-grid-view" style="top: 25px;">
+				<li class="mui-table-view-cell mui-media mui-col-xs-6">
+					<a>
+						<img class="mui-media-object" src="images/main/shipin/5.png">
+						<div class="mui-media-body">北京大学特级小提琴专题</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-6">
+					<a>
+						<img class="mui-media-object" src="images/main/shipin/6.png">
+						<div class="mui-media-body">吕曼钢琴演奏</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-6">
+					<a><img class="mui-media-object" src="images/main/shipin/7.png">
+						<div class="mui-media-body">曾辉激情架子鼓</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-6">
+					<a>
+						<img class="mui-media-object" src="images/main/shipin/8.png">
+						<div class="mui-media-body">上海动漫节萨克斯独奏</div>
+					</a>
+				</li>
+			</ul>
+
+			<div style="position:relative;top: 40px;left: 10px;width:90%;font-size: 22px;border-left-color: red;border-left-style: solid;padding-left: 8px;">
+				<span style="display: inline;">课程分类</span><span style="float: right;font-size: 14px;color: gray;">更多</span>
+			</div>
+			<div class="mui-slider" style="position: relative;top: 50px;width: 90%;margin-left:5%;">
+				<div class="mui-slider-group mui-slider-loop">
+					<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+					<div class="mui-slider-item mui-slider-item-duplicate pindao-div">
+						<a>
+							<img class="pindao" src="images/main/pindao/4.png">
+						</a>
+					</div>
+					<!-- 第一张 -->
+					<div class="mui-slider-item pindao-div">
+						<a>
+							<img class="pindao" src="images/main/pindao/1.png">
+						</a>
+					</div>
+					<!-- 第二张 -->
+					<div class="mui-slider-item pindao-div">
+						<a>
+							<img class="pindao" src="images/main/pindao/2.png">
+						</a>
+					</div>
+					<!-- 第一张 -->
+					<div class="mui-slider-item pindao-div">
+						<a>
+							<img class="pindao" src="images/main/pindao/3.png">
+						</a>
+					</div>
+					<!-- 第二张 -->
+					<div class="mui-slider-item pindao-div">
+						<a>
+							<img class="pindao" src="images/main/pindao/4.png">
+						</a>
+					</div>
+					<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+					<div class="mui-slider-item mui-slider-item-duplicate pindao-div">
+						<a>
+							<img class="pindao" src="images/main/pindao/1.png">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div style="position:relative;top: 63px;left: 10px;width:90%;font-size: 22px;border-left-color: red;border-left-style: solid;padding-left: 8px;">
+				<span style="display: inline;">人气排行</span><span style="float: right;font-size: 14px;color: gray;">更多</span>
+			</div>
+			<ul class="mui-table-view mui-grid-view" style="top: 65px;">
+				<li class="mui-table-view-cell mui-media mui-col-xs-6">
+					<a>
+						<img class="mui-media-object" src="images/main/shipin/2.png">
+						<div class="mui-media-body">北京大学口琴独奏《卡农》</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-6">
+					<a>
+						<img class="mui-media-object" src="images/main/shipin/1.png">
+						<div class="mui-media-body">德国音乐大师双簧管独奏</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-6">
+					<a><img class="mui-media-object" src="images/main/shipin/3.png">
+						<div class="mui-media-body">美女钢琴师演绎性感</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-6">
+					<a>
+						<img class="mui-media-object" src="images/main/shipin/4.png">
+						<div class="mui-media-body">最炫吉他民族风</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</body>
+	<script src="js/mui.min.js"></script>
+	<script>
+		mui.init({
+			swipeBack: false //启用右滑关闭功能
+		});
+		mui.plusReady(function() {
+			var slider = mui("#slider");
+			slider.slider({
+				interval: 2000
+			});
+		});
+	</script>
+
+</html>
