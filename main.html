@@ -68,7 +68,7 @@
 
 	<body>
 		<div class="mui-content" style="padding-top: 50px;">
-			<div id="slider" class="mui-slider" style="min-height: 160px;">
+			<div id="slider" class="mui-slider mui-to-video" style="min-height: 160px;">
 				<div class="mui-slider-group mui-slider-loop">
 					<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
 					<div class="mui-slider-item mui-slider-item-duplicate">
@@ -119,7 +119,7 @@
 				<div class="triangle-right"></div><span class="news-info">因梵蒂诺任FIFA新主席</span>
 				<div class="triangle-right"></div><span class="news-info">快递“进京”严格实名制</span>
 			</div>
-			<ul class="mui-table-view mui-grid-view" style="top: 25px;">
+			<ul class="mui-table-view mui-grid-view mui-to-video " style="top: 25px;">
 				<li class="mui-table-view-cell mui-media mui-col-xs-6">
 					<a>
 						<img class="mui-media-object" src="images/main/shipin/5.png">
@@ -191,7 +191,7 @@
 			<div style="position:relative;top: 63px;left: 10px;width:90%;font-size: 22px;border-left-color: red;border-left-style: solid;padding-left: 8px;">
 				<span style="display: inline;">人气排行</span><span style="float: right;font-size: 14px;color: gray;">更多</span>
 			</div>
-			<ul class="mui-table-view mui-grid-view" style="top: 65px;">
+			<ul class="mui-table-view mui-grid-view mui-to-video " style="top: 65px;">
 				<li class="mui-table-view-cell mui-media mui-col-xs-6">
 					<a>
 						<img class="mui-media-object" src="images/main/shipin/2.png">
@@ -227,6 +227,12 @@
 			var slider = mui("#slider");
 			slider.slider({
 				interval: 2000
+			});
+			mui('.mui-to-video').on('tap','a',function(){
+				mui.openWindow({
+					id:'video-win',
+					url:'pages/video.html'
+				});
 			});
 		});
 	</script>

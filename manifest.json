@@ -181,11 +181,11 @@
 					}
 				},
 				"android": {
-					"mdpi": "", /*普通屏启动图片，分辨率：240x282*/
-					"ldpi": "", /*大屏启动图片，分辨率：320x442*/
-					"hdpi": "", /*高分屏启动图片，分辨率：480x762*/
-					"xhdpi": "", /*720P高分屏启动图片，分辨率：720x1242*/
-					"xxhdpi": ""
+					"mdpi": "images/qidong/1.png", /*普通屏启动图片，分辨率：240x282*/
+					"ldpi": "images/qidong/2.png", /*大屏启动图片，分辨率：320x442*/
+					"hdpi": "images/qidong/3.png", /*高分屏启动图片，分辨率：480x762*/
+					"xhdpi": "images/qidong/4.png", /*720P高分屏启动图片，分辨率：720x1242*/
+					"xxhdpi": "images/qidong/5.png"
 				}
 			}
 		}
@@ -251,7 +251,16 @@
 					"images/personal/touxiang.jpg",
 					"pages/fengmian.jpg",
 					"js/video.js",
-					"css/video-js.css"
+					"css/video-js.css",
+					"images/shipin/yinying.png",
+					"images/shipin/ic-return.png",
+					"images/shipin/xihuan.png",
+					"images/shipin/bofang.png",
+					"images/shipin/shoucang.png",
+					"images/shipin/dianzan.png",
+					"images/shipin/pinglun.png",
+					"images/shipin/fenxiang.png",
+					"images/shipin/xiazai.png"
 				],
 				"refer": [],
 				"priority": 0
@@ -289,7 +298,9 @@
 					"images/main/lishi.png",
 					"images/main/shoucang.png"
 				],
-				"refer": [],
+				"refer": [
+					"pages/video.html"
+				],
 				"priority": 0
 			},
 			"personal.html": {
