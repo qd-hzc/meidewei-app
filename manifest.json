@@ -233,7 +233,8 @@
 					"js/mui.min.js",
 					"css/mui.min.css",
 					"images/guide/02_02.jpg",
-					"images/guide/01_02.jpg"
+					"images/guide/01_02.jpg",
+					"images/logo/logo.png"
 				],
 				"refer": [
 					"index.html"

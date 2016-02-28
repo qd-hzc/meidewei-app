@@ -5,7 +5,8 @@
       "images/personal/touxiang.jpg",
       "js/mui.min.js",
       "css/mui.min.css"
-    ]
+    ],
+    "refer": []
   },
   "index.html": {
     "resources": [
@@ -40,7 +41,8 @@
       "js/mui.min.js",
       "css/mui.min.css",
       "images/guide/02_02.jpg",
-      "images/guide/01_02.jpg"
+      "images/guide/01_02.jpg",
+      "images/logo/logo.png"
     ],
     "refer": [
       "index.html"
@@ -57,7 +59,8 @@
       "pages/fengmian.jpg",
       "js/video.js",
       "css/video-js.css"
-    ]
+    ],
+    "refer": []
   },
   "main.html": {
     "resources": [
@@ -91,7 +94,8 @@
       "images/main/xiazai.png",
       "images/main/lishi.png",
       "images/main/shoucang.png"
-    ]
+    ],
+    "refer": []
   },
   "personal.html": {
     "resources": [
@@ -99,19 +103,22 @@
       "css/mui.min.css",
       "fonts/mui.ttf",
       "images/personal/touxiang.jpg"
-    ]
+    ],
+    "refer": []
   },
   "channel.html": {
     "resources": [
       "fonts/mui.ttf",
       "js/mui.min.js",
       "css/mui.min.css"
-    ]
+    ],
+    "refer": []
   },
   "vip.html": {
     "resources": [
       "js/mui.min.js",
       "css/mui.min.css"
-    ]
+    ],
+    "refer": []
   }
 }
